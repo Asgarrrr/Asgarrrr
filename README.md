@@ -4,6 +4,7 @@ Nice to meet you! I'm just a French guy who likes to develop anything and everyt
 
 I am currently working on a small Discord bot, [Luna](https://github.com/Asgarrrr/Luna), used by 49012 members.
 
+My activity :
 ```
 JavaScript  64.12 %      █████████████░░░░░░░ 640 hrs 46 mins
 PHP         13.61 %      ███░░░░░░░░░░░░░░░░░ 136 hrs 2 mins
@@ -19,8 +20,4 @@ C++         0.28  %      ░░░░░░░░░░░░░░░░░░�
 
 ###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on January 12, 2017 at 3:30pm
 
-
-( Not for the moment, I work x) )
-
-<!-- I'm just a person who spends his time developing useless things, like Luna, a Disord bot used by 46579 peoples ( this presentation updates automatically, the last one is from 9/11/2021, 01:08:16 PM ) -->
 
