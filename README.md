@@ -2,6 +2,10 @@
 
 Nice to meet you! I'm just a French guy who likes to develop anything and everything ( often anything ). My favorite language is Javascript ( and by extension Node.js ). I can handle C and C++, but I'm just starting. I also know <abbr title="HyperText Markup Language">HTML</abbr>, CSS & PHP.
 
+I am currently working on a small Discord bot, [Luna](https://github.com/Asgarrrr/Luna), used by 49012 members.
+
+
+
 ###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on January 12, 2017 at 3:30pm
 
 
