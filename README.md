@@ -2,7 +2,7 @@
 
 Nice to meet you! I'm just a French guy who likes to develop anything and everything ( often anything ). My favorite language is Javascript ( and by extension Node.js ). I can handle C and C++, but I'm just starting. I also know <abbr title="HyperText Markup Language">HTML</abbr>, CSS & PHP.
 
-###### This presentation is updated automatically every minute, most recently on January 12, 2017 at 3:30pm
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on January 12, 2017 at 3:30pm
 
 
 <!-- I'm just a person who spends his time developing useless things, like Luna, a Disord bot used by 46579 peoples ( this presentation updates automatically, the last one is from 9/11/2021, 01:08:16 PM ) -->
