@@ -2,8 +2,8 @@
 Nice to meet you! I'm just a French guy who likes to develop anything and everything ( often anything ). <br/>My favorite language is Javascript ( and by extension Node.js ). I can handle C and C++, but I'm just starting. I also know HTML, CSS & PHP.<br/><br/>
 I am currently working on a small Discord bot, [Luna](https://github.com/Asgarrrr/Luna), used by 46583 members.
 
-My work this week
--------------------
+##### My work this week
+
 ```
 JavaScript │ 100%     ████████████████████    8 hrs 12 mins
 ```
