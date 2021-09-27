@@ -3,12 +3,13 @@ Nice to meet you! I'm just a French guy who likes to develop anything and everyt
 I am currently working on a small Discord bot, [Luna](https://github.com/Asgarrrr/Luna), used by 48177 members.<br/>
 ##### My work this week<br/>
 ```
-       C++ │ 44.32%   █████████░░░░░░░░░░░    34 hrs 51 mins
-JavaScript │ 32.08%   ██████░░░░░░░░░░░░░░    25 hrs 13 mins
-       PHP │ 12.13%   ██░░░░░░░░░░░░░░░░░░    9 hrs 32 mins
-       EJS │ 5.88%    █░░░░░░░░░░░░░░░░░░░    4 hrs 37 mins
-       CSS │ 4.74%    █░░░░░░░░░░░░░░░░░░░    3 hrs 43 mins
-     Other │ 0.54%    ░░░░░░░░░░░░░░░░░░░░    25 mins
-      JSON │ 0.3%     ░░░░░░░░░░░░░░░░░░░░    14 mins
+       C++ │ 50.21%   ██████████░░░░░░░░░░    43 hrs 22 mins
+JavaScript │ 38.28%   ████████░░░░░░░░░░░░    33 hrs 4 mins
+       CSS │ 4.31%    █░░░░░░░░░░░░░░░░░░░    3 hrs 43 mins
+       EJS │ 2.78%    █░░░░░░░░░░░░░░░░░░░    2 hrs 23 mins
+       PHP │ 2.1%     ░░░░░░░░░░░░░░░░░░░░    1 hr 48 mins
+      HTML │ 1.47%    ░░░░░░░░░░░░░░░░░░░░    1 hr 16 mins
+     Other │ 0.56%    ░░░░░░░░░░░░░░░░░░░░    28 mins
+      JSON │ 0.28%    ░░░░░░░░░░░░░░░░░░░░    14 mins
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on 9/27/2021, 10:00:02 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on 9/27/2021, 10:01:01 PM ( UTC±0 ).
