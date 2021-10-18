@@ -3,11 +3,10 @@ Nice to meet you! I'm just a French guy who likes to develop anything and everyt
 I am currently working on a small Discord bot, [Luna](https://github.com/Asgarrrr/Luna), used by 50862 members.<br/>
 ##### My work this week<br/>
 ```
-JavaScript │ 52.75%   ███████████░░░░░░░░░    39 hrs 27 mins
-       CSS │ 26.05%   █████░░░░░░░░░░░░░░░    19 hrs 29 mins
-      HTML │ 13.1%    ███░░░░░░░░░░░░░░░░░    9 hrs 48 mins
-       C++ │ 7.68%    ██░░░░░░░░░░░░░░░░░░    5 hrs 44 mins
-     Other │ 0.37%    ░░░░░░░░░░░░░░░░░░░░    16 mins
-      JSON │ 0.04%    ░░░░░░░░░░░░░░░░░░░░    1 min
+JavaScript │ 43.23%   █████████░░░░░░░░░░░    25 hrs 29 mins
+       CSS │ 30.69%   ██████░░░░░░░░░░░░░░    18 hrs 5 mins
+      HTML │ 16.06%   ███░░░░░░░░░░░░░░░░░    9 hrs 28 mins
+       C++ │ 9.71%    ██░░░░░░░░░░░░░░░░░░    5 hrs 43 mins
+     Other │ 0.32%    ░░░░░░░░░░░░░░░░░░░░    11 mins
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on 10/18/2021, 01:06:01 AM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every minute, most recently on 10/18/2021, 01:07:01 AM ( UTC±0 ).
