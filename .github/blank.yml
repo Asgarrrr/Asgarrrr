@@ -1,0 +1,10 @@
+name: "Update Readme"
+
+on:
+  schedule:
+    - cron:  "* * * * *"
+
+jobs:
+  update:
+    name: "Update profile"
+    echo: "test"
