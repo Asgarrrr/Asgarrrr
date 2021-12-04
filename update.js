@@ -55,6 +55,8 @@ const { WakaTime } 	= require( "wakatime" )
         sha		: sha
     });
 
+    console.log( "Successfully updated the README.md" );
+
 })();
 
 function generateLanguageChart( languages ) {
