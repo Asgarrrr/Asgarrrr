@@ -6,6 +6,6 @@ Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>,
 
 This week, I've worked on 24 hours of coding.
 
-Python │ 95.94%   ███████████████████░   23 hrs 12 mins
+```Python │ 95.94%   ███████████████████░   23 hrs 12 mins
   YAML │ 3.46%    █░░░░░░░░░░░░░░░░░░░   50 mins
- Other │ 0.59%    ░░░░░░░░░░░░░░░░░░░░   8 mins
+ Other │ 0.59%    ░░░░░░░░░░░░░░░░░░░░   8 mins```
