@@ -1,0 +1,20 @@
+{
+  "name": "asgarrrr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asgarrrr/Asgarrrr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asgarrrr/Asgarrrr/issues"
+  },
+  "homepage": "https://github.com/Asgarrrr/Asgarrrr#readme"
+}
