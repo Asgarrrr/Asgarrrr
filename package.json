@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Asgarrrr/Asgarrrr/issues"
   },
-  "homepage": "https://github.com/Asgarrrr/Asgarrrr#readme"
+  "homepage": "https://github.com/Asgarrrr/Asgarrrr#readme",
+  "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "axios": "^0.24.0",
+    "wakatime": "^1.2.0"
+  }
 }
