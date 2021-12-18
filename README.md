@@ -2,21 +2,21 @@
 
 Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little things with his poor knowledge.
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 56598 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 56596 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
 
-This week, I've worked on ~45 hours of coding, and drinked 1 coffees ☕.
+This week, I've worked on ~43 hours of coding, and drinked 1 coffees ☕.
 
 ```
-JavaScript │ 30.54%   ██████░░░░░░░░░░░░░░   13 hrs 49 mins
-    Python │ 30.28%   ██████░░░░░░░░░░░░░░   13 hrs 42 mins
-       C++ │ 17.28%   ███░░░░░░░░░░░░░░░░░   7 hrs 49 mins
-       CSS │ 10.91%   ██░░░░░░░░░░░░░░░░░░   4 hrs 56 mins
-       EJS │ 5.54%    █░░░░░░░░░░░░░░░░░░░   2 hrs 30 mins
-      HTML │ 4.05%    █░░░░░░░░░░░░░░░░░░░   1 hr 49 mins
-     Other │ 0.76%    ░░░░░░░░░░░░░░░░░░░░   20 mins
-       XML │ 0.41%    ░░░░░░░░░░░░░░░░░░░░   11 mins
-      Bash │ 0.12%    ░░░░░░░░░░░░░░░░░░░░   3 mins
-      JSON │ 0.07%    ░░░░░░░░░░░░░░░░░░░░   1 min
+JavaScript │ 40.66%   ████████░░░░░░░░░░░░   17 hrs 39 mins
+    Python │ 31.16%   ██████░░░░░░░░░░░░░░   13 hrs 32 mins
+       C++ │ 18.01%   ████░░░░░░░░░░░░░░░░   7 hrs 49 mins
+       EJS │ 5.78%    █░░░░░░░░░░░░░░░░░░░   2 hrs 30 mins
+       CSS │ 2.88%    █░░░░░░░░░░░░░░░░░░░   1 hr 15 mins
+     Other │ 0.79%    ░░░░░░░░░░░░░░░░░░░░   20 mins
+       XML │ 0.43%    ░░░░░░░░░░░░░░░░░░░░   11 mins
+      Bash │ 0.13%    ░░░░░░░░░░░░░░░░░░░░   3 mins
+      JSON │ 0.09%    ░░░░░░░░░░░░░░░░░░░░   2 mins
+         C │ 0.05%    ░░░░░░░░░░░░░░░░░░░░   1 min
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/18/2021, 11:11:02 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/18/2021, 11:26:59 PM ( UTC±0 ).
