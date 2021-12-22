@@ -7,13 +7,12 @@ Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>,
 This week, I've worked on ~49 hours of coding, and drinked 0 coffees ☕.
 
 ```
-JavaScript │ 48.84%   ██████████░░░░░░░░░░   24 hrs 16 mins
-       EJS │ 38.55%   ████████░░░░░░░░░░░░   19 hrs 9 mins
-       CSS │ 10.29%   ██░░░░░░░░░░░░░░░░░░   5 hrs 6 mins
-       C++ │ 1.65%    ░░░░░░░░░░░░░░░░░░░░   49 mins
-     Other │ 0.47%    ░░░░░░░░░░░░░░░░░░░░   14 mins
+JavaScript │ 50.11%   ██████████░░░░░░░░░░   24 hrs 32 mins
+       EJS │ 39.11%   ████████░░░░░░░░░░░░   19 hrs 9 mins
+       CSS │ 10.44%   ██░░░░░░░░░░░░░░░░░░   5 hrs 6 mins
+     Other │ 0.15%    ░░░░░░░░░░░░░░░░░░░░   4 mins
       Bash │ 0.11%    ░░░░░░░░░░░░░░░░░░░░   3 mins
       JSON │ 0.08%    ░░░░░░░░░░░░░░░░░░░░   2 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/22/2021, 11:10:09 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/22/2021, 11:27:28 PM ( UTC±0 ).
