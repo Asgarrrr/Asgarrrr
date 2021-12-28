@@ -4,7 +4,7 @@ Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little
 
 Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 58872 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
 
-This week, I've worked on ~28 hours of coding, and drinked 5 coffees ☕.
+This week, I've worked on ~28 hours of coding, and drinked 6 coffees ☕.
 
 ```
 JavaScript │ 84.37%   █████████████████░░░   23 hrs 31 mins
@@ -12,4 +12,4 @@ JavaScript │ 84.37%   █████████████████░�
        EJS │ 1.66%    ░░░░░░░░░░░░░░░░░░░░   27 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/28/2021, 05:58:35 AM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 12/28/2021, 06:15:58 AM ( UTC±0 ).
