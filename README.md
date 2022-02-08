@@ -2,17 +2,18 @@
 
 Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little things with his poor knowledge.
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 69393 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 69395 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
 
-This week, I've worked on ~24 hours of coding, and drinked 0 coffees ☕.
+This week, I've worked on ~38 hours of coding, and drinked 0 coffees ☕.
 
 ```
-JavaScript │ 91.82%   ██████████████████░░   22 hrs 3 mins
-TypeScript │ 5.08%    █░░░░░░░░░░░░░░░░░░░   1 hr 13 mins
-Git Config │ 1.84%    ░░░░░░░░░░░░░░░░░░░░   26 mins
-       CSV │ 0.65%    ░░░░░░░░░░░░░░░░░░░░   9 mins
-      JSON │ 0.39%    ░░░░░░░░░░░░░░░░░░░░   5 mins
-      Bash │ 0.19%    ░░░░░░░░░░░░░░░░░░░░   2 mins
+JavaScript │ 93.68%   ███████████████████░   35 hrs 34 mins
+TypeScript │ 3.21%    █░░░░░░░░░░░░░░░░░░░   1 hr 13 mins
+Git Config │ 1.16%    ░░░░░░░░░░░░░░░░░░░░   26 mins
+       CSV │ 1.12%    ░░░░░░░░░░░░░░░░░░░░   25 mins
+     Other │ 0.44%    ░░░░░░░░░░░░░░░░░░░░   9 mins
+      JSON │ 0.25%    ░░░░░░░░░░░░░░░░░░░░   5 mins
+      Bash │ 0.12%    ░░░░░░░░░░░░░░░░░░░░   2 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 2/8/2022, 11:07:01 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 2/8/2022, 11:24:20 PM ( UTC±0 ).
