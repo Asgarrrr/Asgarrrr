@@ -2,20 +2,20 @@
 
 Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little things with his poor knowledge.
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 70675 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 70678 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
 
-This week, I've worked on ~48 hours of coding, and drinked 0 coffees ☕.
+This week, I've worked on ~60 hours of coding, and drinked 0 coffees ☕.
 
 ```
-JavaScript │ 92.41%   ██████████████████░░   44 hrs 16 mins
-TypeScript │ 2.55%    █░░░░░░░░░░░░░░░░░░░   1 hr 13 mins
-     Swift │ 1.47%    ░░░░░░░░░░░░░░░░░░░░   42 mins
-    Python │ 1.1%     ░░░░░░░░░░░░░░░░░░░░   31 mins
-Git Config │ 0.92%    ░░░░░░░░░░░░░░░░░░░░   26 mins
-       CSV │ 0.89%    ░░░░░░░░░░░░░░░░░░░░   25 mins
-     Other │ 0.35%    ░░░░░░░░░░░░░░░░░░░░   9 mins
-      JSON │ 0.2%     ░░░░░░░░░░░░░░░░░░░░   5 mins
-      Bash │ 0.1%     ░░░░░░░░░░░░░░░░░░░░   2 mins
+JavaScript │ 93.95%   ███████████████████░   56 hrs 25 mins
+TypeScript │ 2.03%    ░░░░░░░░░░░░░░░░░░░░   1 hr 13 mins
+     Swift │ 1.17%    ░░░░░░░░░░░░░░░░░░░░   42 mins
+    Python │ 0.88%    ░░░░░░░░░░░░░░░░░░░░   31 mins
+Git Config │ 0.73%    ░░░░░░░░░░░░░░░░░░░░   26 mins
+       CSV │ 0.71%    ░░░░░░░░░░░░░░░░░░░░   25 mins
+     Other │ 0.28%    ░░░░░░░░░░░░░░░░░░░░   9 mins
+      JSON │ 0.16%    ░░░░░░░░░░░░░░░░░░░░   5 mins
+      Bash │ 0.08%    ░░░░░░░░░░░░░░░░░░░░   2 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 2/12/2022, 11:14:37 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 2/12/2022, 11:27:04 PM ( UTC±0 ).
