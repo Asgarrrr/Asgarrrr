@@ -2,13 +2,13 @@
 
 Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little things with his poor knowledge.
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74636 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74634 users with very unique features. I'm also working on `Yuna Unpack`, a tool for datamining the contents of Epic Seven's files.
 
-This week, I've worked on ~3 hours of coding, and drinked 0 coffees ☕.
+This week, I've worked on ~5 hours of coding, and drinked 0 coffees ☕.
 
 ```
-JavaScript │ 81.83%   ████████████████░░░░   2 hrs 13 mins
-       EJS │ 18.11%   ████░░░░░░░░░░░░░░░░   29 mins
+JavaScript │ 97.03%   ███████████████████░   4 hrs 48 mins
+       EJS │ 2.86%    █░░░░░░░░░░░░░░░░░░░   8 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 3/23/2022, 11:07:30 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 3/23/2022, 11:24:58 PM ( UTC±0 ).
