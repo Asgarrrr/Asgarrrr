@@ -17,4 +17,4 @@ Image (png) │ 1.29%    ░░░░░░░░░░░░░░░░░░�
        HTML │ 0.53%    ░░░░░░░░░░░░░░░░░░░░   6 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 4/14/2022, 10:51:53 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 4/14/2022, 10:57:41 PM ( UTC±0 ).
