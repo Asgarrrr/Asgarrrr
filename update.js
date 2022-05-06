@@ -31,7 +31,7 @@ const { WakaTime } 	= require( "wakatime" )
 
     const bio = [
         `<h1>   <img src="./spoink.gif" style="vertical-align:middle;" width="30px">   Hello ! </h1>`,
-        `Nice to meet you! I'm just a guy without a tomorrow, who likes to develop little things with his poor knowledge.`,
+        `Nice to meet you!`,
         `Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>\`Luna\`</a>, a Discord bot used by ${ lunaGuild } users with very unique features. I'm also working on \`Yuna Unpack\`, a tool for datamining the contents of Epic Seven's files.`,
         `This week, I've worked on ~${ Math.round( wakaData.data.total_seconds / 60 / 60 ) } hours of coding, and drinked ${ coffeeDrink } coffees ☕.`,
         `\`\`\`\n${ languageProgress }\n\`\`\``,
@@ -40,7 +40,7 @@ const { WakaTime } 	= require( "wakatime" )
 
     const base64 = new Buffer.from( bio ).toString( "base64" );
 
-    const { data: { sha } } = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+    const { data: { sha } } = await octokit.request( "GET /repos/{owner}/{repo}/contents/{path}", {
         owner	: "Asgarrrr",
         repo	: "Asgarrrr",
         path	: "README.md"
@@ -134,7 +134,6 @@ async function getCoffeeDrink( ) {
         return coffeDrink.data.count;
 
     } catch ( error ) {
-
         return 0
 
     }
