@@ -33,7 +33,7 @@ const { WakaTime } 	= require( "wakatime" )
         `<h1>   <img src="./spoink.gif" style="vertical-align:middle;" width="30px">   Hello ! </h1>`,
         `Nice to meet you!`,
         `Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>\`Luna\`</a>, a Discord bot used by ${ lunaGuild } users with very unique features. I'm also working on \`Yuna Unpack\`, a tool for datamining the contents of Epic Seven's files.`,
-        `This week, I've worked on ~${ Math.round( wakaData.data.total_seconds / 60 / 60 ) } hours of coding, and drinked ${ coffeeDrink } coffees ☕.`,
+        `This week, I've worked on ~${ Math.round( wakaData.data.total_seconds / 60 / 60 ) } hours of coding, and drinked ${ coffeeDrink } coffees ☕`,
         `\`\`\`\n${ languageProgress }\n\`\`\``,
         `###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on ${ lastUpdate } ( UTC±0 ).`,
     ].join( "\n\n" );
