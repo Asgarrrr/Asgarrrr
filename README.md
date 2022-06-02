@@ -1,4 +1,4 @@
-<h1>   <img src="./spoink.gif" style="vertical-align:middle;" width="30px">   Hello ! </h1>
+<h1>   <img src="./spoinky.gif" style="vertical-align:middle;" width="310px">   Hello ! </h1>
 
 Nice to meet you!
 
@@ -14,4 +14,4 @@ JavaScript │ 73.52%   ███████████████░░░�
       Bash │ 0.08%    ░░░░░░░░░░░░░░░░░░░░   1 min
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/2/2022, 08:58:32 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/2/2022, 08:52:37 PM ( UTC±0 ).
