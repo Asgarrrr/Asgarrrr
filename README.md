@@ -2,17 +2,16 @@
 
 Nice to meet you!
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74089 users with very unique features.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74164 users with very unique features.
 
-This week, I've worked on ~70 hours of coding, and drinked 111 coffees ☕
+This week, I've worked on ~67 hours of coding, and drinked 111 coffees ☕
 
 ```
-JavaScript │ 83.9%    █████████████████░░░   58 hrs 39 mins
-       EJS │ 10.37%   ██░░░░░░░░░░░░░░░░░░   7 hrs 14 mins
-       CSS │ 3.17%    █░░░░░░░░░░░░░░░░░░░   2 hrs 13 mins
-      Bash │ 2.23%    ░░░░░░░░░░░░░░░░░░░░   1 hr 33 mins
-      JSON │ 0.26%    ░░░░░░░░░░░░░░░░░░░░   10 mins
-  Markdown │ 0.07%    ░░░░░░░░░░░░░░░░░░░░   3 mins
+JavaScript │ 79.07%   ████████████████░░░░   52 hrs 42 mins
+       EJS │ 10.06%   ██░░░░░░░░░░░░░░░░░░   6 hrs 42 mins
+      Bash │ 7.27%    █░░░░░░░░░░░░░░░░░░░   4 hrs 50 mins
+       CSS │ 3.33%    █░░░░░░░░░░░░░░░░░░░   2 hrs 13 mins
+      JSON │ 0.27%    ░░░░░░░░░░░░░░░░░░░░   10 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/12/2022, 10:00:03 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/12/2022, 10:16:15 PM ( UTC±0 ).
