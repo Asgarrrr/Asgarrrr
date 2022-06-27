@@ -2,21 +2,21 @@
 
 Nice to meet you!
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74790 users with very unique features.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74789 users with very unique features.
 
-This week, I've worked on ~59 hours of coding, and drinked 34 coffees ☕
+This week, I've worked on ~64 hours of coding, and drinked 34 coffees ☕
 
 ```
-    JavaScript │ 51.05%   ██████████░░░░░░░░░░   29 hrs 59 mins
-           CSS │ 22.17%   ████░░░░░░░░░░░░░░░░   13 hrs 1 min
-           EJS │ 15.44%   ███░░░░░░░░░░░░░░░░░   9 hrs 4 mins
-          HTML │ 5.59%    █░░░░░░░░░░░░░░░░░░░   3 hrs 17 mins
-          JSON │ 3.28%    █░░░░░░░░░░░░░░░░░░░   1 hr 55 mins
-        Python │ 1.55%    ░░░░░░░░░░░░░░░░░░░░   54 mins
-     .env file │ 0.45%    ░░░░░░░░░░░░░░░░░░░░   15 mins
-          Text │ 0.32%    ░░░░░░░░░░░░░░░░░░░░   11 mins
-GitIgnore file │ 0.09%    ░░░░░░░░░░░░░░░░░░░░   3 mins
-      Markdown │ 0.04%    ░░░░░░░░░░░░░░░░░░░░   1 min
+    JavaScript │ 47.64%   ██████████░░░░░░░░░░   30 hrs 36 mins
+           CSS │ 20.8%    ████░░░░░░░░░░░░░░░░   13 hrs 22 mins
+           EJS │ 15.07%   ███░░░░░░░░░░░░░░░░░   9 hrs 41 mins
+        Python │ 11.2%    ██░░░░░░░░░░░░░░░░░░   7 hrs 11 mins
+          JSON │ 3.57%    █░░░░░░░░░░░░░░░░░░░   2 hrs 17 mins
+          HTML │ 0.72%    ░░░░░░░░░░░░░░░░░░░░   27 mins
+     .env file │ 0.41%    ░░░░░░░░░░░░░░░░░░░░   15 mins
+          Text │ 0.29%    ░░░░░░░░░░░░░░░░░░░░   11 mins
+    TypeScript │ 0.11%    ░░░░░░░░░░░░░░░░░░░░   4 mins
+GitIgnore file │ 0.08%    ░░░░░░░░░░░░░░░░░░░░   3 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/27/2022, 10:09:25 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 6/27/2022, 10:26:49 PM ( UTC±0 ).
