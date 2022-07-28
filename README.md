@@ -2,7 +2,7 @@
 
 Nice to meet you!
 
-Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74777 users with very unique features.
+Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>, a Discord bot used by 74776 users with very unique features.
 
 This week, I've worked on ~47 hours of coding, and drinked 0 coffees ☕
 
@@ -16,4 +16,4 @@ TypeScript │ 1.46%    ░░░░░░░░░░░░░░░░░░�
       Bash │ 0.11%    ░░░░░░░░░░░░░░░░░░░░   3 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 7/28/2022, 01:56:18 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 7/28/2022, 02:10:23 PM ( UTC±0 ).
