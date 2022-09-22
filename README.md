@@ -7,8 +7,7 @@ Currently, I'm working on <a href='https://github.com/Asgarrrr/Luna'>`Luna`</a>,
 This week, I've worked on ~0 hours of coding, and drinked 0 coffees ☕
 
 ```
-    Python │ 52.12%   ██████████░░░░░░░░░░   26 mins
-JavaScript │ 47.88%   ██████████░░░░░░░░░░   24 mins
+Python │ 100%     ████████████████████   26 mins
 ```
 
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 9/22/2022, 10:39:28 PM ( UTC±0 ).
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 9/22/2022, 10:51:30 PM ( UTC±0 ).
