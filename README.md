@@ -1,4 +1,4 @@
-```Cirru
+```
 $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh
  _____                             
 |  _  |___ ___ ___ ___ ___ ___ ___ 
