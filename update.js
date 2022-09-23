@@ -71,7 +71,7 @@ void async function main( ) {
 
     // ── Update README.md
     const octokit = new Octokit({ auth: process.env.GITHUBTOKEN });
-    const base64 = new Buffer.from( output ).toString( "base64" );
+    const base64 = new Buffer.from( output.join( "\n" ) ).toString( "base64" );
 
     const { data: { sha } } = await octokit.request( "GET /repos/{owner}/{repo}/contents/{path}", {
         owner	: "Asgarrrr",
