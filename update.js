@@ -9,6 +9,7 @@ void async function main( ) {
         , wakaData  = await waka.stats( "last_7_days" );
 
     const output    = [
+        "```console",
         "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | bash",
         "",
         " _____                             ",
@@ -67,6 +68,7 @@ void async function main( ) {
         "│",
         "└── Databases",
         "    └── MySQL       SQLite      MongoDB         Redis",
+        "```"
     );
 
     // ── Update README.md
