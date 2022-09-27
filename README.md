@@ -12,8 +12,7 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 
 $ waka stats --user Asgarrrr --from 2022-09-20 --to 2022-09-27
 
-  Python  │  100%  ████████████████████   26 mins
- ~ Total ─┴─────────────────────────────> 26 mins
+ ~ Total ─┴─────────────────────────────> 0 secs
 
 $ ls Asgarrrr
 ├── README.md
