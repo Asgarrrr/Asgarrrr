@@ -46,7 +46,7 @@ void async function main( ) {
 
     }
 
-    const lastUpdate = new Date( new Date().setHours( new Date().getHours( ) + 2 ) ).toLocaleDateString( undefined, {
+    const lastUpdate = new Date( ).toLocaleDateString( "fr-FR", {
 	    year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit"
 	});
 
@@ -73,8 +73,7 @@ void async function main( ) {
         "└── Databases",
         "    └── MySQL       SQLite      MongoDB         Redis",
         "```",
-        `###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on ${ lastUpdate } ( UTC±2 )
-        </small>`
+        `###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on ${ lastUpdate } ( UTC±2 )`
     );
 
     // ── Update README.md
