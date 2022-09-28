@@ -10,7 +10,7 @@ void async function main( ) {
 
     const output    = [
         "```console",
-        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | bash",
+        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh",
         "",
         " _____                             ",
         "|  _  |___ ___ ___ ___ ___ ___ ___ ",
@@ -46,6 +46,10 @@ void async function main( ) {
 
     }
 
+    const lastUpdate = new Date( new Date().setHours( new Date().getHours( ) + 2 ) ).toLocaleDateString( undefined, {
+	    year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit"
+	});
+
     output.push(
         "~ Total ".padStart( maxLangNameLength + 2, " " ) + "─┴─────────────────────────────> " + wakaData.data.human_readable_total,
         "",
@@ -68,7 +72,9 @@ void async function main( ) {
         "│",
         "└── Databases",
         "    └── MySQL       SQLite      MongoDB         Redis",
-        "```"
+        "```",
+        `###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on ${ lastUpdate } ( UTC±2 )
+        </small>`
     );
 
     // ── Update README.md
