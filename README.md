@@ -12,7 +12,8 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh
 
 $ waka stats --user Asgarrrr --from 2022-09-21 --to 2022-09-28
 
- ~ Total ─┴─────────────────────────────> 0 secs
+ JavaScript  │  100%  ████████████████████   59 mins
+    ~ Total ─┴─────────────────────────────> 59 mins
 
 $ ls Asgarrrr
 ├── README.md
@@ -34,4 +35,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 28/09/2022, 22:07:33 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 28/09/2022, 22:32:43 ( UTC±2 )
