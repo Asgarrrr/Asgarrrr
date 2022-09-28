@@ -10,7 +10,7 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 ├── Born on 2000.11.14
 └── Joined Github on 2017.02.17
 
-$ waka stats --user Asgarrrr --from 2022-09-20 --to 2022-09-27
+$ waka stats --user Asgarrrr --from 2022-09-21 --to 2022-09-28
 
  ~ Total ─┴─────────────────────────────> 0 secs
 
