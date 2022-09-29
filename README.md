@@ -1,5 +1,5 @@
 ```console
-$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh
+$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh
 
  _____                             
 |  _  |___ ___ ___ ___ ___ ___ ___ 
@@ -35,4 +35,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 5 minute, most recently on 29/09/2022, 07:51:01 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 2 hours, most recently on 29/09/2022, 08:28:44 ( UTC±2 )
