@@ -10,7 +10,7 @@ void async function main( ) {
 
     const output    = [
         "```console",
-        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh",
+        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh",
         "",
         " _____                             ",
         "|  _  |___ ___ ___ ___ ___ ___ ___ ",
