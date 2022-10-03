@@ -38,7 +38,7 @@ void async function main( ) {
             continue;
 
         const name       = language.name.padStart( maxLangNameLength +1, " " );
-        const percentage = language.percent.toString().padStart( 3, " " ) + "%";
+        const percentage = language.percent.toString().padStart( 5, " " );
         const loadbar   = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 20, " " );
         const time       = language.text.padStart( 7, " " );
 
