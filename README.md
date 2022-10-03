@@ -12,13 +12,13 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 
 $ waka stats --user Asgarrrr --from 2022-09-26 --to 2022-10-03
 
-       Java  │   45%%  █████████              5 hrs 26 mins
- JavaScript  │  41.37%%  ████████               4 hrs 59 mins
-       Bash  │  5.74%%  █                      41 mins
-        PHP  │  4.26%%  █                      30 mins
-      Other  │  1.61%%                         11 mins
-        XML  │  1.51%%                         10 mins
- TypeScript  │  0.48%%                          3 mins
+       Java  │     45%  █████████              5 hrs 26 mins
+ JavaScript  │  41.37%  ████████               4 hrs 59 mins
+       Bash  │   5.74%  █                      41 mins
+        PHP  │   4.26%  █                      30 mins
+      Other  │   1.61%                         11 mins
+        XML  │   1.51%                         10 mins
+ TypeScript  │   0.48%                          3 mins
     ~ Total ─┴─────────────────────────────> 11 hrs 53 mins
 
 $ ls Asgarrrr
@@ -41,4 +41,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 2 hours, most recently on 03/10/2022, 09:01:50 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 2 hours, most recently on 03/10/2022, 09:24:19 ( UTC±2 )
