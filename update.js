@@ -42,7 +42,7 @@ void async function main( ) {
         const loadbar   = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 20, " " );
         const time       = language.text.padStart( 7, " " );
 
-        output.push( `${ name }  │  ${ language.percent.toString().padStart( 3, " " ) }%  ${ loadbar }   ${ time }` );
+        output.push( `${ name }  │  ${ percentage }%  ${ loadbar }   ${ time }` );
 
     }
 
