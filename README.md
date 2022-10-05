@@ -10,20 +10,22 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 ├── Born on 2000.11.14
 └── Joined Github on 2017.02.17
 
-$ waka stats --user Asgarrrr --from 2022-09-27 --to 2022-10-04
+$ waka stats --user Asgarrrr --from 2022-09-28 --to 2022-10-05
 
- JavaScript  │  61.67%  ████████████           14 hrs 4 mins
-       Java  │  23.83%  █████                  5 hrs 26 mins
- Git Config  │   4.39%  █                         1 hr
-       Bash  │   3.62%  █                      49 mins
-        PHP  │   2.69%  █                      36 mins
-       JSON  │   1.25%                         17 mins
-      Other  │   0.95%                         13 mins
-        XML  │    0.8%                         10 mins
- TypeScript  │   0.53%                          7 mins
-       HTML  │   0.14%                           1 min
-   Markdown  │   0.11%                           1 min
-    ~ Total ─┴─────────────────────────────> 22 hrs 36 mins
+   JavaScript  │  48.92%  ██████████             14 hrs 4 mins
+       Python  │  19.33%  ████                   5 hrs 33 mins
+         Java  │   18.9%  ████                   5 hrs 26 mins
+   Git Config  │   3.48%  █                         1 hr
+         Bash  │   2.88%  █                      49 mins
+          PHP  │   2.13%                         36 mins
+        Other  │   1.75%                         30 mins
+         JSON  │   0.99%                         17 mins
+          XML  │   0.63%                         10 mins
+   TypeScript  │   0.42%                          7 mins
+ CoffeeScript  │   0.34%                          5 mins
+         HTML  │   0.11%                           1 min
+     Markdown  │   0.09%                           1 min
+      ~ Total ─┴─────────────────────────────> 28 hrs 16 mins
 
 $ ls Asgarrrr
 ├── README.md
@@ -45,4 +47,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 2 hours, most recently on 04/10/2022, 22:19:45 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr) automatically every 2 hours, most recently on 05/10/2022, 01:48:57 ( UTC±2 )
