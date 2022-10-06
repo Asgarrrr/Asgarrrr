@@ -27,6 +27,8 @@ void async function main( ) {
 
     let maxLangNameLength = 7;
 
+    wakaData.data.languages.length = 7;
+
     for ( const lang of wakaData.data.languages )
         if ( lang.name.length > maxLangNameLength )
             maxLangNameLength = lang.name.length;
