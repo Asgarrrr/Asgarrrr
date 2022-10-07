@@ -33,6 +33,11 @@ void async function main( ) {
         if ( lang.name.length > maxLangNameLength )
             maxLangNameLength = lang.name.length;
 
+    // If we have hour > 10, we need to add 1 to the max length to avoid the hour to be on the same line as the name
+    const hourPrefixed = wakaData.data.languages.some( lang => lang.hours >= 10 );
+    const minsPrefixed = wakaData.data.languages.some( lang => lang.minutes >= 10 );
+
+
     for ( const language of wakaData.data.languages ) {
 
         // ── Skip if language is not used more than 1 minute
@@ -40,9 +45,9 @@ void async function main( ) {
             continue;
 
         const name       = language.name.padStart( maxLangNameLength +1, " " );
-        const percentage = language.percent.toString().padStart( 5, " " );
-        const loadbar   = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 20, " " );
-        const time       = language.text.padStart( 7, " " );
+        const percentage = language.percent.toString().padEnd( 4, 0 ).padStart( 5, " " );
+        const loadbar     = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 18, " " );
+        const time       = `${ hourPrefixed && language.hours < 10 ? " " : "" }${ language.hours } hr${ language.hours > 1 ? "s" : " " } ${ minsPrefixed && language.minutes < 10 ? 0 : "" }${ language.minutes } min${ language.minutes > 1 ? "s" : " " }`;
 
         output.push( `${ name }  │  ${ percentage }%  ${ loadbar }   ${ time }` );
 
