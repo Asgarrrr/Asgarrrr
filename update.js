@@ -37,17 +37,16 @@ void async function main( ) {
     const hourPrefixed = wakaData.data.languages.some( lang => lang.hours >= 10 );
     const minsPrefixed = wakaData.data.languages.some( lang => lang.minutes >= 10 );
 
-
     for ( const language of wakaData.data.languages ) {
 
         // ── Skip if language is not used more than 1 minute
         if ( language.total_seconds < 60 )
             continue;
 
-        const name       = language.name.padStart( maxLangNameLength +1, " " );
-        const percentage = language.percent.toString().padEnd( 4, 0 ).padStart( 5, " " );
-        const loadbar     = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 18, " " );
-        const time       = `${ hourPrefixed && language.hours < 10 ? " " : "" }${ language.hours } hr${ language.hours > 1 ? "s" : " " } ${ minsPrefixed && language.minutes < 10 ? 0 : "" }${ language.minutes } min${ language.minutes > 1 ? "s" : " " }`;
+        const name          = language.name.padStart( maxLangNameLength +1, " " );
+        const percentage    = language.percent.toString().padEnd( 4, 0 ).padStart( 5, " " );
+        const loadbar       = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 18, " " );
+        const time          = `${ ( hourPrefixed && language.hours ) < 10 ? " " : "" }${ language.hours } hr${ language.hours > 1 ? "s" : " " } ${ minsPrefixed && language.minutes < 10 ? 0 : "" }${ language.minutes } min${ language.minutes > 1 ? "s" : " " }`;
 
         output.push( `${ name }  │  ${ percentage }%  ${ loadbar }   ${ time }` );
 
