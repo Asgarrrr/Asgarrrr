@@ -5,7 +5,7 @@ const { WakaTime } 	= require( "wakatime" )
 
 void async function main( ) {
 
-    const waka      = new WakaTime( `${ process.env.WAKATIMETOKEN }` )
+    const waka      = new WakaTime( `${ process.env.WAKATIMETOKEN || "084487e3-1ed2-4fd8-ad07-99d269d10118" }` )
         , wakaData  = await waka.stats( "last_7_days" );
 
     const output    = [
@@ -30,7 +30,7 @@ void async function main( ) {
     wakaData.data.languages.length = 7;
 
     for ( const lang of wakaData.data.languages )
-        if ( lang.name.length > maxLangNameLength )
+        if ( lang && lang.name.length > maxLangNameLength )
             maxLangNameLength = lang.name.length;
 
     // If we have hour > 10, we need to add 1 to the max length to avoid the hour to be on the same line as the name
@@ -38,6 +38,9 @@ void async function main( ) {
     const minsPrefixed = wakaData.data.languages.some( lang => lang.minutes >= 10 );
 
     for ( const language of wakaData.data.languages ) {
+
+        if( !language )
+            continue;
 
         // ── Skip if language is not used more than 1 minute
         if ( language.total_seconds < 60 )
