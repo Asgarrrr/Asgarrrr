@@ -9,7 +9,7 @@ void async function main( ) {
         , wakaData  = await waka.stats( "last_7_days" );
 
     const output    = [
-	"![visits](https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgithub.com%2FAsgarrrr&s=1&c=00ff00&bg=00000000&no=2&ff=digi)",
+	"![visits](https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgithub.com%2FAsgarrrr&s=1&c=00ff0000&bg=00000000&no=2&ff=digi)",
         "```console",
         "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh",
         "",
