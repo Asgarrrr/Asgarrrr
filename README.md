@@ -1,4 +1,3 @@
-![visits](https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgithub.com%2FAsgarrrr&s=1&c=00ff0000&bg=00000000&no=2&ff=digi)
 ```console
 $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh
 
@@ -36,4 +35,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 09/12/2022, 02:43:17 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 09/12/2022, 04:17:42 ( UTC±2 )
