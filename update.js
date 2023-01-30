@@ -5,7 +5,7 @@ const { WakaTime } 	= require( "wakatime" )
 
 void async function main( ) {
 
-    const waka      = new WakaTime( `${ process.env.WAKATIMETOKEN || "084487e3-1ed2-4fd8-ad07-99d269d10118" }` )
+    const waka      = new WakaTime( `${ process.env.WAKATIMETOKEN }` )
         , wakaData  = await waka.stats( "last_7_days" );
 
     const output    = [
