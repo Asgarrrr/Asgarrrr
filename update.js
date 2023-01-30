@@ -70,7 +70,7 @@ void async function main( ) {
         "│   └── PHP         C           C++             Python",
         "│",
         "├── Frameworks",
-        "│   ├── Bootstrap   React       TailwindCSS     Laravel",
+        "│   ├── Bootstrap   React       TailwindCSS     Symfony",
         "│   └── Vue         ",
         "│",
         "├── Tools",
