@@ -10,13 +10,12 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 ├── Born on 2000.11.14
 └── Joined Github on 2017.02.17
 
-$ waka stats --user Asgarrrr --from 2023-07-19 --to 2023-07-26
+$ waka stats --user Asgarrrr --from 2023-07-20 --to 2023-07-27
 
- Markdown  │  72.21%  ██████████████        1 hr  55 mins
-   Python  │   17.5%  ████                  0 hr  27 mins
-   Vue.js  │   8.25%  ██                    0 hr  13 mins
-      INI  │   2.03%                        0 hr  03 mins
-  ~ Total ─┴─────────────────────────────> 2 hrs 39 mins
+ Markdown  │  87.53%  ██████████████████    1 hr  55 mins
+   Vue.js  │   1000%  ██                    0 hr  13 mins
+      INI  │   2.46%                        0 hr  03 mins
+  ~ Total ─┴─────────────────────────────> 2 hrs 11 mins
 
 $ ls Asgarrrr
 ├── README.md
@@ -38,4 +37,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 26/07/2023, 22:02:12 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 27/07/2023, 00:30:14 ( UTC±2 )
