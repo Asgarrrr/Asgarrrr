@@ -10,7 +10,7 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 ├── Born on 2000.11.14
 └── Joined Github on 2017.02.17
 
-$ waka stats --user Asgarrrr --from 2023-07-22 --to 2023-07-29
+$ waka stats --user Asgarrrr --from 2023-07-23 --to 2023-07-30
 
      JavaScript  │  63.71%  █████████████         7 hrs 14 mins
        Markdown  │  16.95%  ███                   1 hr  55 mins
@@ -40,4 +40,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 29/07/2023, 22:01:42 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 30/07/2023, 00:33:35 ( UTC±2 )
