@@ -12,14 +12,14 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 
 $ waka stats --user Asgarrrr --from 2023-10-25 --to 2023-11-01
 
- JavaScript  │  70.15%  ██████████████       43 hrs 30 mins
-     Python  │  10.24%  ██                    6 hrs 21 mins
-       JSON  │   6.79%  █                     4 hrs 12 mins
- TypeScript  │   4.41%  █                     2 hrs 44 mins
-        CSS  │   3.79%  █                     2 hrs 21 mins
-        MDX  │   2.78%  █                     1 hr  43 mins
-   Assembly  │   0.37%                        0 hr  13 mins
-    ~ Total ─┴─────────────────────────────> 62 hrs 1 min
+ JavaScript  │  62.07%  ████████████         28 hrs 52 mins
+     Python  │  13.66%  ███                   6 hrs 21 mins
+       JSON  │   8.71%  ██                    4 hrs 03 mins
+ TypeScript  │   5.64%  █                     2 hrs 37 mins
+        CSS  │   5.04%  █                     2 hrs 20 mins
+        MDX  │   3.10%  █                     1 hr  26 mins
+  .env file  │   0.39%                        0 hr  10 mins
+    ~ Total ─┴─────────────────────────────> 46 hrs 30 mins
 
 $ ls Asgarrrr
 ├── README.md
@@ -41,4 +41,4 @@ $ ls Asgarrrr
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 01/11/2023, 00:28:41 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 01/11/2023, 02:18:06 ( UTC±2 )
