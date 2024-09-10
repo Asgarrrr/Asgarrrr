@@ -66,7 +66,7 @@ void async function main( ) {
         "├── README.md",
         "│",
         "├── Languages",
-        "│   ├── HTML        CSS         JavaScript      NodeJS",
+        "│   ├── HTML        CSS         TypeScript      NodeJS",
         "│   └── PHP         C           C++             Python",
         "│",
         "├── Frameworks",
