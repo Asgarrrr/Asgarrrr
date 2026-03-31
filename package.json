@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Asgarrrr/Asgarrrr#readme",
   "dependencies": {
     "@octokit/core": "^3.5.1",
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "wakatime": "^1.2.0"
   }
 }
