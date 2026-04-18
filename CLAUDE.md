@@ -82,7 +82,49 @@ the prompt yourself**. Do not default to memory when a source exists.
 
 ---
 
-## 7. Verification
+## 7. Code Craft
+
+<craft priority="high">
+Correctness is the floor, not the ceiling. Code must also be **well-reasoned** and **pleasant
+to read**. This is not about style rules (linter's job) — it is about shape, logic, and taste.
+
+- **Think before you type.** The first solution that compiles is rarely the right one. Ask:
+  is there a simpler model? A smaller data structure? A case this collapses into another?
+- **Algorithmic honesty.** Pick the right data structure for the access pattern. Do not brute
+  force what a set, map, or single pass would solve. Complexity that is not justified is
+  a bug waiting to be filed.
+- **Shape over cleverness.** Flat over nested. Early returns over pyramids. Small pure
+  functions over long procedural blocks. Make the happy path the straight line through the
+  function.
+- **Name things precisely.** A variable named `data`, `info`, `handle`, `process`, `manager`
+  is a red flag. Name after the role, not the type. Rename when meaning drifts.
+- **Symmetry and rhythm matter.** Functions at the same level of abstraction should read at
+  the same level of abstraction. Parallel logic should look parallel on the page.
+- **Delete aggressively.** Dead code, commented-out blocks, unused exports, "just in case"
+  parameters — remove them. The best diff is often a negative one.
+- **One reason to change per unit.** If a function does two things joined by "and", split it.
+- **Prefer composition over flags.** Boolean parameters that branch behavior are a smell.
+- **Comments earn their place.** They explain intent, trade-offs, or invariants the code
+  cannot. Never `// increment i`. Never a comment that repeats the next line.
+- **Read the diff aloud.** If it does not read like prose a colleague could follow, redo it.
+</craft>
+
+---
+
+## 8. Personal Formatting Preferences
+
+These override the defaults when no project convention applies. Project conventions always win
+(match what is already there).
+
+- Write everything in English (code, comments, commit messages, PR descriptions).
+- 2-space indentation.
+- Keep a space inside function-call and control-flow parentheses: `if ( condition )`,
+  `fn( arg )`.
+- Omit braces when a branch is a single statement: `if ( condition ) return;`.
+
+---
+
+## 9. Verification
 
 <verification priority="critical">
 "It compiles" is not verification.
@@ -96,7 +138,7 @@ the prompt yourself**. Do not default to memory when a source exists.
 
 ---
 
-## 8. Git & PRs
+## 10. Git & PRs
 
 - Branch per change. Never commit directly to `main` / `master` / `develop`.
 - One logical change per commit. Imperative subject. Body explains *why* when non-obvious.
@@ -107,7 +149,7 @@ the prompt yourself**. Do not default to memory when a source exists.
 
 ---
 
-## 9. Linters, Formatters, Tests
+## 11. Linters, Formatters, Tests
 
 Deterministic tools are cheaper, faster, and more reliable than I am. Do not hand-enforce
 style rules. Run the project's formatter/linter, fix what it reports, move on.
@@ -116,7 +158,7 @@ If a rule matters, it lives in a linter config or a `PostToolUse` hook — not i
 
 ---
 
-## 10. Skills, Commands, Subagents, Hooks
+## 12. Skills, Commands, Subagents, Hooks
 
 | Use | For |
 |-----|-----|
@@ -129,7 +171,7 @@ Rule: **if I do it more than once a day, it becomes a command or a skill.**
 
 ---
 
-## 11. Safety
+## 13. Safety
 
 <safety priority="critical">
 - Never run `rm -rf`, `git reset --hard`, `git push --force`, `DROP TABLE`, `TRUNCATE`, or any
@@ -142,7 +184,7 @@ Rule: **if I do it more than once a day, it becomes a command or a skill.**
 
 ---
 
-## 12. Debugging
+## 14. Debugging
 
 - Reproduce before diagnosing.
 - Run failing processes as background tasks so logs stream; do not guess output.
@@ -153,7 +195,7 @@ Rule: **if I do it more than once a day, it becomes a command or a skill.**
 
 ---
 
-## 13. Progressive Disclosure
+## 15. Progressive Disclosure
 
 Per-project `CLAUDE.md` should be short (~60 lines) and point to detail:
 
@@ -175,7 +217,7 @@ When a project lists `agent_docs/`, surface the list and ask which to read befor
 
 ---
 
-## 14. Anti-Patterns
+## 16. Anti-Patterns
 
 - Auto-generating `CLAUDE.md` with `/init` and shipping it unreviewed.
 - Dumping every command, style rule, and quirk into `CLAUDE.md`.
@@ -183,16 +225,20 @@ When a project lists `agent_docs/`, surface the list and ask which to read befor
 - Fixing symptoms (catch-and-ignore, `any`, commenting out the failing assert).
 - "Improving" code I did not ask you to touch.
 - Declaring success without running anything.
+- Nested ternaries, seven-level indentation, generic names (`data`, `item`, `handle`).
+- Copy-pasted logic instead of a named helper.
+- `else` after a `return` / `throw`. Collapse it.
 
 ---
 
-## 15. End-of-Turn Check
+## 17. End-of-Turn Check
 
 Before handing back control:
 
 1. Did I actually run the verification I claimed?
 2. Is the diff the smallest that solves the problem?
-3. Would a reviewer understand *why* from the commit/PR alone?
-4. Any TODOs, dead code, debug prints, or commented-out blocks left behind?
+3. Would I be proud to put my name on this diff at code review?
+4. Would a reviewer understand *why* from the commit/PR alone?
+5. Any TODOs, dead code, debug prints, or commented-out blocks left behind?
 
 If any answer is "no" or "not sure" — keep working.
