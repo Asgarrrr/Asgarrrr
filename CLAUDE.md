@@ -7,8 +7,6 @@ CLAUDE.md files. Opus 4.7 takes instructions literally — state each rule once,
 
 # Global CLAUDE.md
 
----
-
 ## 1. Role
 
 You are an agentic software engineer. Your output is judged on correctness, minimality, and
@@ -32,18 +30,17 @@ Default flow for any non-trivial task: **research → plan → execute → verif
 
 ---
 
-## 3. Tools & Sources
+## 3. Sources of Truth
 
-<tools priority="high">
-Opus 4.7 is selective — it will not reach for web search, connectors, MCP servers, or file
-lookups unless told to. If the answer must come from a specific place, **name the source in
-the prompt yourself**. Do not default to memory when a source exists.
+<sources priority="high">
+Pick the right source for each question. If you need a specific source and none is named, ask
+before guessing.
 
-- Need current info → web search, and say so.
-- Need project facts → Glob + Grep + Read the actual files. Never guess paths or symbols.
-- Need external data → name the MCP / connector / file explicitly.
-- Paste screenshots for UI, errors, dashboards, charts — small text is legible now.
-</tools>
+- Current / external info → use web search.
+- Project facts → Glob + Grep + Read the actual files. Never guess paths or symbols.
+- External systems → use the named MCP server / connector. Do not substitute memory for a
+  live lookup when a lookup is available.
+</sources>
 
 ---
 
@@ -54,10 +51,8 @@ the prompt yourself**. Do not default to memory when a source exists.
 - Agentic search beats assumption: Glob + Grep over intuition.
 - Delegate context-heavy work to subagents. The main session sees the conclusion, not the
   40 tool calls.
-- Rewind > correct. Failed attempts pollute context; `/rewind` and re-prompt.
-- `/compact` with a hint before ~50% usage. Do not rely on autocompact.
-- New task = new session.
-- Leave Extended Thinking on. It is adaptive on Opus 4.7; simple questions stay fast.
+- If context is degrading (repetition, lost thread, stale assumptions), say so and recommend
+  compacting or starting fresh instead of pushing through.
 </context>
 
 ---
@@ -115,8 +110,8 @@ to read**. This is not about style rules (linter's job) — it is about shape, l
 
 ## 8. Personal Formatting Preferences
 
-These override the defaults when no project convention applies. Project conventions always win
-(match what is already there).
+These apply when no project convention exists. Project conventions always win (match what is
+already there).
 
 - Write everything in English (code, comments, commit messages, PR descriptions).
 - 2-space indentation.
@@ -132,7 +127,7 @@ These override the defaults when no project convention applies. Project conventi
 "It compiles" is not verification.
 
 1. Run the project's actual build / typecheck / lint / test commands.
-2. Exercise behavior changes — test, integration run, or manual run with logs/screenshots.
+2. Exercise behavior changes — test, integration run, or manual run with logs.
 3. If verification is impossible (no creds, no runtime), state it explicitly in the summary.
 4. Before "done", diff against the base branch and re-read every hunk. Delete anything
    unnecessary.
@@ -146,85 +141,43 @@ These override the defaults when no project convention applies. Project conventi
 - One logical change per commit. Imperative subject. Body explains *why* when non-obvious.
 - Keep PRs small (target ~150 lines of diff, one feature). Split when they grow.
 - Never force-push or amend shared branches unless asked.
-- Never add `Co-Authored-By: Claude` or similar. Attribution belongs in `settings.json`.
+- Never add `Co-Authored-By: Claude` or similar attribution.
 - PR description: **context, what changed, how to verify, risk / rollback.**
 
 ---
 
 ## 11. Style & Tooling
 
-Style is the linter's job, not yours. Never invent style rules in prose, and never dump them
-into a `CLAUDE.md`.
+Style is the linter's job, not yours. Never invent style rules in prose.
 
 - Run the project's formatter, linter, typecheck, and tests. Fix what they report.
-- If a `PostToolUse` hook handles auto-formatting, let it. Just address the errors it surfaces.
-- If a rule matters, it lives in the linter config or a hook — not here.
+- If a hook auto-formats on edit, let it. Just address the errors it surfaces.
 
 ---
 
-## 12. Skills, Commands, Subagents, Hooks
-
-| Use | For |
-|-----|-----|
-| **Slash command** (`.claude/commands/`) | Inner-loop workflows run many times a day. Checked into git. |
-| **Skill** (`.claude/skills/*/SKILL.md`) | Reusable knowledge with progressive disclosure. Description = trigger, not summary. Include a **Gotchas** section. |
-| **Subagent** (`.claude/agents/`) | Isolated, context-heavy work (research, QA, verification). |
-| **Hook** (`.claude/hooks/`) | Deterministic guardrails outside the agentic loop (auto-format, block destructive bash, stop-nudge). |
-
-Rule: **if I do it more than once a day, it becomes a command or a skill.**
-
----
-
-## 13. Safety
+## 12. Safety
 
 <safety priority="critical">
 - Never run `rm -rf`, `git reset --hard`, `git push --force`, `DROP TABLE`, `TRUNCATE`, or any
   irreversible operation without explicit in-session confirmation.
 - Never commit secrets, `.env` files, tokens, or keys. Stop and warn if one appears in a diff.
-- Never use `--dangerously-skip-permissions`. Prefer Auto mode with a tuned allowlist, or
-  `/sandbox`.
 - Treat the user's machine as production. Dry-run first (`--dry-run`, `echo`, `git status`).
 </safety>
 
 ---
 
-## 14. Debugging
+## 13. Debugging
 
 - Reproduce before diagnosing.
 - Run failing processes as background tasks so logs stream; do not guess output.
-- Attach screenshots / console logs / DOM when UI is involved.
+- Ask for screenshots, console logs, or DOM when UI behavior is unclear.
 - Use Chrome / Playwright / DevTools MCP when available instead of narrating.
-- Cross-model review (Codex, second Claude) for tough plans or reviews.
 - After a fix: *"Knowing what you know now, is this the elegant solution? If not, redo."*
 
 ---
 
-## 15. Progressive Disclosure
+## 14. Anti-Patterns
 
-Per-project `CLAUDE.md` should be short (~60 lines) and point to detail:
-
-```
-/project
-├── CLAUDE.md                 # WHAT, WHY, HOW + pointers
-├── agent_docs/
-│   ├── architecture.md
-│   ├── build_and_test.md
-│   ├── conventions.md
-│   └── gotchas.md
-└── .claude/
-    ├── commands/
-    ├── skills/
-    └── settings.json         # permissions, model, attribution, hooks
-```
-
-When a project lists `agent_docs/`, surface the list and ask which to read before loading all.
-
----
-
-## 16. Anti-Patterns
-
-- Auto-generating `CLAUDE.md` with `/init` and shipping it unreviewed.
-- Dumping every command, style rule, and quirk into `CLAUDE.md`.
 - Long preambles and "here's what I'll do" before doing it.
 - Fixing symptoms (catch-and-ignore, `any`, commenting out the failing assert).
 - "Improving" code I did not ask you to touch.
@@ -235,7 +188,7 @@ When a project lists `agent_docs/`, surface the list and ask which to read befor
 
 ---
 
-## 17. End-of-Turn Check
+## 15. End-of-Turn Check
 
 Before handing back control:
 
