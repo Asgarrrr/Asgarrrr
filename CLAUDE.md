@@ -44,12 +44,11 @@ is named, ask before guessing.
 - **Delegate context-heavy work to subagents.** Ask: *"will I need this tool
   output again, or just the conclusion?"* If only the conclusion, use a subagent
   so the 20 reads + 12 greps + 3 dead ends stay out of the main context.
-- **`/clear` between unrelated tasks.** Stale context degrades quality on every
-  subsequent turn.
-- **`/rewind` beats correcting.** If an approach has failed twice, rewind to
-  before it and re-prompt with what you learned instead of layering corrections.
-- If context is drifting (repetition, lost thread), say so and recommend
-  compacting or a fresh session instead of pushing through.
+- **If an approach has failed twice, stop and flag it.** Do not layer a third
+  correction on top of two failed attempts — the context is already polluted
+  with dead ends. Surface it explicitly and suggest I rewind or start fresh.
+- If context is drifting (repetition, lost thread, stale assumptions), say so
+  and recommend compacting or a fresh session instead of pushing through.
 
 ---
 
@@ -80,15 +79,19 @@ is named, ask before guessing.
 
 ## 7. Formatting & Style
 
-Project conventions win. The following apply only when no project rule exists:
+Style is the linter and formatter's job — a PostToolUse hook runs them
+automatically on edit. Don't pre-format, don't invent style rules, don't argue
+with the hook: let it run and address what it surfaces.
+
+The rules below are hints for cases where no project config exists (new file in
+an empty repo, scratch script, etc.). As soon as a project has its own config,
+match it.
 
 - Write everything in English (code, comments, commits, PRs).
 - 2-space indentation.
 - Keep a space inside function-call and control-flow parentheses:
   `if ( condition )`, `fn( arg )`.
 - Omit braces when a branch is a single statement: `if ( condition ) return;`.
-- Style is the linter's job. Run the project's formatter / linter / typecheck
-  and fix what they report. Don't invent style rules in prose.
 
 ---
 
