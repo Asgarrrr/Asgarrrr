@@ -1,9 +1,11 @@
-# Global CLAUDE.md
+<!--
+Maintainer note (not an instruction for the model):
+Place this file at ~/.claude/CLAUDE.md — it loads into every Claude Code session, on every
+project. Keep it short, universal, opinionated. Project-specific details live in per-repo
+CLAUDE.md files. Opus 4.7 takes instructions literally — state each rule once, no repetition.
+-->
 
-> Place at `~/.claude/CLAUDE.md`. Loads into every session, every project.
-> Keep it short, universal, opinionated. Project-specific details belong in per-repo `CLAUDE.md`.
-> Opus 4.7 follows instructions literally — every line is stated **once**, no repetition for
-> emphasis. Treat this file as a contract, not a pep talk.
+# Global CLAUDE.md
 
 ---
 
@@ -149,12 +151,14 @@ These override the defaults when no project convention applies. Project conventi
 
 ---
 
-## 11. Linters, Formatters, Tests
+## 11. Style & Tooling
 
-Deterministic tools are cheaper, faster, and more reliable than I am. Do not hand-enforce
-style rules. Run the project's formatter/linter, fix what it reports, move on.
+Style is the linter's job, not yours. Never invent style rules in prose, and never dump them
+into a `CLAUDE.md`.
 
-If a rule matters, it lives in a linter config or a `PostToolUse` hook — not in prose.
+- Run the project's formatter, linter, typecheck, and tests. Fix what they report.
+- If a `PostToolUse` hook handles auto-formatting, let it. Just address the errors it surfaces.
+- If a rule matters, it lives in the linter config or a hook — not here.
 
 ---
 
