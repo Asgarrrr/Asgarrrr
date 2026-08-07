@@ -1,5 +1,5 @@
 ```console
-$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh
+$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/main/hello.sh | sh
 
  _____                             
 |  _  |___ ___ ___ ___ ___ ___ ___ 
@@ -10,28 +10,24 @@ $ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | 
 ├── Born on 2000.11.14
 └── Joined Github on 2017.02.17
 
-$ waka stats --user Asgarrrr --from 2026-07-31 --to 2026-08-07
-
- ~ Total ─┴─────────────────────────────> 0 secs
-
 $ ls Asgarrrr
 ├── README.md
 │
 ├── Languages
-│   ├── HTML        CSS         TypeScript      NodeJS
-│   └── PHP         C           C++             Python
+│   ├── TypeScript    Rust          JavaScript    Python
+│   └── C             C++           PHP           Shell
 │
 ├── Frameworks
-│   ├── Bootstrap   React       TailwindCSS     Symfony
-│   └── Vue         
+│   ├── React         Next.js       Elysia        Vue
+│   └── TailwindCSS   Vite          Symfony
 │
 ├── Tools
-│   ├── VSCode      WebStorm    PyCharm         Docker
-│   ├── Git         GitHub      Vercel          Railway
-│   ├── Sketch      Figma       Discord         Visual Studio
-│   └── Xcode       
+│   ├── Bun           Biome         Docker        VSCode
+│   ├── WebStorm      Git           GitHub        Vercel
+│   └── Railway       Turborepo     Figma
 │
 └── Databases
-    └── MySQL       SQLite      MongoDB         Redis
+    ├── PostgreSQL    MySQL         SQLite        MongoDB
+    └── Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on 07/08/2026, 12:33:32 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every Sunday, most recently on 07/08/2026 13:42:58 ( UTC±2 )
