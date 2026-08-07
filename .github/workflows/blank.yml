@@ -2,10 +2,8 @@ name: Update
 
 on:
   schedule:
-  - cron: "0 */2 * * *"
-  push:
-    branches:
-    - master
+  # ── Every Sunday at 00:00 UTC (02:00 Paris in summer, 01:00 in winter)
+  - cron: "0 0 * * 0"
   workflow_dispatch:
 
 jobs:
@@ -13,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: "14.x"
+        node-version: "22.x"
     - run: npm install
     - run: node update.js
       env:

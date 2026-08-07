@@ -3,14 +3,69 @@
 const { WakaTime } 	= require( "wakatime" )
 	, { Octokit }	= require( "@octokit/core" );
 
+// ██████ Stack ████████████████████████████████████████████████████████████████
+// ── Edit here, the tree below is rendered from this. Rows wrap every 4 columns.
+
+const STACK = {
+    Languages   : [ "TypeScript", "Rust", "JavaScript", "Python", "C", "C++", "PHP", "Shell" ],
+    Frameworks  : [ "React", "Next.js", "Elysia", "Vue", "TailwindCSS", "Vite", "Symfony" ],
+    Tools       : [ "Bun", "Biome", "Docker", "VSCode", "WebStorm", "Git", "GitHub", "Vercel", "Railway", "Turborepo", "Figma" ],
+    Databases   : [ "PostgreSQL", "MySQL", "SQLite", "MongoDB", "Redis" ]
+};
+
+const COLUMNS   = 4
+    , COLUMN_W  = 14;
+
+// ██████ Helpers ██████████████████████████████████████████████████████████████
+
+const isoDay = timestamp => new Date( timestamp ).toISOString( ).split( "T" )[ 0 ];
+
+// ── Renders "├── Name" followed by its padded rows, the last section closes with └──
+function renderSection( name, items, isLast ) {
+
+    const rows = [ ];
+
+    for ( let i = 0; i < items.length; i += COLUMNS )
+        rows.push( items.slice( i, i + COLUMNS ).map( item => item.padEnd( COLUMN_W, " " ) ).join( "" ).trimEnd( ) );
+
+    const gutter = isLast ? " " : "│";
+
+    return [
+        `${ isLast ? "└" : "├" }── ${ name }`,
+        ...rows.map( ( row, i ) => `${ gutter }   ${ i === rows.length - 1 ? "└" : "├" }── ${ row }` )
+    ];
+
+}
+
+// ── Last 7 days of stats, or null when WakaTime is unset, unreachable or idle
+async function fetchWaka( ) {
+
+    if ( !process.env.WAKATIMETOKEN )
+        return null;
+
+    try {
+
+        const waka  = new WakaTime( `${ process.env.WAKATIMETOKEN }` )
+            , stats = await waka.stats( "last_7_days" );
+
+        return stats?.data ?? null;
+
+    } catch ( error ) {
+
+        console.warn( `WakaTime unavailable, skipping the stats block — ${ error.message }` );
+        return null;
+
+    }
+
+}
+
+// ██████ Main █████████████████████████████████████████████████████████████████
+
 void async function main( ) {
 
-    const waka      = new WakaTime( `${ process.env.WAKATIMETOKEN }` )
-        , wakaData  = await waka.stats( "last_7_days" );
-
-    const output    = [
+    const output = [
         "```console",
-        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/master/hello.sh | sh",
+        "$ curl -s https://raw.githubusercontent.com/Asgarrrr/Asgarrrr/main/hello.sh | sh",
         "",
         " _____                             ",
         "|  _  |___ ___ ___ ___ ___ ___ ___ ",
@@ -20,74 +75,69 @@ void async function main( ) {
         "├── From France.",
         "├── Born on 2000.11.14",
         "└── Joined Github on 2017.02.17",
-        "",
-        `$ waka stats --user Asgarrrr --from ${ new Date( Date.now( ) - 604800000 ).toISOString( ).split( "T" )[ 0 ] } --to ${ new Date( ).toISOString( ).split( "T" )[ 0 ] }`,
-        "",
-    ]
+        ""
+    ];
 
-    let maxLangNameLength = 7;
+    // ── The whole block is dropped when the week is empty, rather than publishing
+    //    "~ Total ─> 0 secs" on the profile.
+    const wakaData  = await fetchWaka( )
+        , languages = ( wakaData?.languages ?? [ ] )
+            .filter( language => language && language.total_seconds >= 60 )
+            .slice( 0, 7 );
 
-    wakaData.data.languages.length = 7;
+    if ( languages.length ) {
 
-    for ( const lang of wakaData.data.languages )
-        if ( lang && lang.name.length > maxLangNameLength )
-            maxLangNameLength = lang.name.length;
+        output.push(
+            `$ waka stats --user Asgarrrr --from ${ isoDay( Date.now( ) - 604800000 ) } --to ${ isoDay( Date.now( ) ) }`,
+            ""
+        );
 
-    // If we have hour > 10, we need to add 1 to the max length to avoid the hour to be on the same line as the name
-    const hourPrefixed = wakaData.data.languages.some( lang => lang.hours >= 10 );
-    const minsPrefixed = wakaData.data.languages.some( lang => lang.minutes >= 10 );
+        const maxLangNameLength = Math.max( 7, ...languages.map( language => language.name.length ) )
+            , hourPrefixed      = languages.some( language => language.hours   >= 10 )
+            , minsPrefixed      = languages.some( language => language.minutes >= 10 );
 
-    for ( const language of wakaData.data.languages ) {
+        for ( const language of languages ) {
 
-        if( !language )
-            continue;
+            const name          = language.name.padStart( maxLangNameLength + 1, " " );
+            const percentage    = language.percent.toString( ).padEnd( 4, 0 ).padStart( 5, " " );
+            const loadbar       = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 18, " " );
+            const hours         = `${ hourPrefixed && language.hours   < 10 ? " " : "" }${ language.hours }`;
+            const minutes       = `${ minsPrefixed && language.minutes < 10 ? "0" : "" }${ language.minutes }`;
+            const time          = `${ hours } hr${ language.hours > 1 ? "s" : " " } ${ minutes } min${ language.minutes > 1 ? "s" : " " }`;
 
-        // ── Skip if language is not used more than 1 minute
-        if ( language.total_seconds < 60 )
-            continue;
+            output.push( `${ name }  │  ${ percentage }%  ${ loadbar }   ${ time }` );
 
-        const name          = language.name.padStart( maxLangNameLength +1, " " );
-        const percentage    = language.percent.toString().padEnd( 4, 0 ).padStart( 5, " " );
-        const loadbar       = "█".repeat( Math.round( language.percent / 5 ) ).padEnd( 18, " " );
-        const time          = `${ ( hourPrefixed && language.hours ) < 10 ? " " : "" }${ language.hours } hr${ language.hours > 1 ? "s" : " " } ${ minsPrefixed && language.minutes < 10 ? 0 : "" }${ language.minutes } min${ language.minutes > 1 ? "s" : " " }`;
+        }
 
-        output.push( `${ name }  │  ${ percentage }%  ${ loadbar }   ${ time }` );
+        output.push(
+            "~ Total ".padStart( maxLangNameLength + 2, " " ) + "─┴─────────────────────────────> " + wakaData.human_readable_total,
+            ""
+        );
 
     }
+
+    output.push( "$ ls Asgarrrr", "├── README.md", "│" );
+
+    const sections = Object.entries( STACK );
+
+    sections.forEach( ( [ name, items ], index ) => {
+        output.push( ...renderSection( name, items, index === sections.length - 1 ) );
+        if ( index < sections.length - 1 )
+            output.push( "│" );
+    } );
 
     const lastUpdate = new Date( ).toLocaleDateString( "fr-FR", {
 	    year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit"
 	});
 
     output.push(
-        "~ Total ".padStart( maxLangNameLength + 2, " " ) + "─┴─────────────────────────────> " + wakaData.data.human_readable_total,
-        "",
-        "$ ls Asgarrrr",
-        "├── README.md",
-        "│",
-        "├── Languages",
-        "│   ├── HTML        CSS         TypeScript      NodeJS",
-        "│   └── PHP         C           C++             Python",
-        "│",
-        "├── Frameworks",
-        "│   ├── Bootstrap   React       TailwindCSS     Symfony",
-        "│   └── Vue         ",
-        "│",
-        "├── Tools",
-        "│   ├── VSCode      WebStorm    PyCharm         Docker",
-        "│   ├── Git         GitHub      Vercel          Railway",
-        "│   ├── Sketch      Figma       Discord         Visual Studio",
-        "│   └── Xcode       ",
-        "│",
-        "└── Databases",
-        "    └── MySQL       SQLite      MongoDB         Redis",
         "```",
-        `###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every 2 hours, most recently on ${ lastUpdate } ( UTC±2 )`
+        `###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every Sunday, most recently on ${ lastUpdate } ( UTC±2 )`
     );
 
     // ── Update README.md
     const octokit = new Octokit({ auth: process.env.GITHUBTOKEN });
-    const base64 = new Buffer.from( output.join( "\n" ) ).toString( "base64" );
+    const base64 = Buffer.from( output.join( "\n" ) ).toString( "base64" );
 
     const { data: { sha } } = await octokit.request( "GET /repos/{owner}/{repo}/contents/{path}", {
         owner	: "Asgarrrr",
@@ -99,7 +149,7 @@ void async function main( ) {
         owner	: "Asgarrrr",
         repo	: "Asgarrrr",
         path	: "README.md",
-        message	: "update",
+        message	: "chore(readme): weekly refresh",
         content	: base64,
         sha		: sha
     });
