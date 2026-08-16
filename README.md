@@ -30,4 +30,4 @@ $ ls Asgarrrr
     ├── PostgreSQL    MySQL         SQLite        MongoDB
     └── Redis
 ```
-###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every Sunday, most recently on 09/08/2026 01:38:29 ( UTC±2 )
+###### This presentation is [updated](https://github.com/Asgarrrr/Asgarrrr/blob/main/update.js) automatically every Sunday, most recently on 16/08/2026 01:12:58 ( UTC±2 )
